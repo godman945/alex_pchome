@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>demo</title>
+<span th:replace="tiles/base_common_css/base_css"></span>
+<span th:replace="tiles/base_common_js/base_js"></span>
+
+
+</head>
+
+<body>
+	<div th:replace="tiles/header"></div>
+	<div>
+		<table width="100%" border="1" height="100%" class="display">
+			<tr>
+				<td>
+				    <div style="margin-top:15px;">
+					<h5 style="display:inline;">名單成員類型。</h5>
+					<select id="" style="display:inline;">
+						<option value="">網頁訪客</option>
+						<option value="">一併造訪過其他網頁的訪客</option>
+						<option value="">未造訪其他網頁的訪客</option>
+						<option value="">特定日期範圍內的網頁訪客</option>
+						<option value="">造訪含特定代碼網頁的訪客</option>
+					</select>
+					</div>
+					
+					
+					<!-- 提供網頁訪客條件內容用  start-->
+					<div>
+						<div style="margin-top:15px;">
+							<h5 id="conditionUl" style="display:inline;">造訪過的網頁。<select id="queryGroupSelect" ><option value="query_any_group">符合任何規則群組</option><option value="query_all_group">符合所有規則群組</option></select></h5>
+							
+							<!-- 
+							<input type="text" id="daterange" name="daterange" value=""  />
+							<select id="querySelect">
+								<option value="type_1">不重覆UUID</option>
+							</select>
+							 -->
+						</div>
+						<input id="createButton" type="button" value="OR" style="width:120px;height:20px;border:2px;background-color:#9999FF;" onclick="clickConditionButton();">
+					</div>
+					<!-- 提供網頁訪客條件內容用  end-->
+					<br>
+					<button type="button"  onclick="dataQuery()" style="margin-top:30px;width:120px;">送出查詢</button>
+					<!-- 查詢結果 -->
+					<div style="margin-top:15px;">
+						<div style="padding-top: 15px;">
+							<table id="myDataTalbe" width="95%" class="display" >
+								<thead style="text-align:right;">
+									<tr id="myDataTalbe_title">
+									</tr>
+								</thead>
+								<tbody id="report_tbody" style="text-align:right;">
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</td>
+
+				
+			</tr>
+		</table>
+		<div th:replace="tiles/footer"></div>
+</body>
+</html>

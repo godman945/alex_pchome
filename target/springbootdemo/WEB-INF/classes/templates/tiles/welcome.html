@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>demo</title>
+<span th:replace="tiles/base_common_css/base_css"></span>
+<span th:replace="tiles/base_common_js/base_js"></span>
+</head>
+
+<body>
+	<div th:replace="tiles/header"></div>
+	<div>
+		<table width="100%" border="1" height="100%" class="display">
+			<tr>
+				<td>
+					<h1>第一層館別資料</h1> 查詢條件:
+					<input type="text" id="daterange" name="daterange" value=""  />
+					<select id="querySelect">
+						<option value="type_1">不重覆UUID</option>
+						<option value="type_2">男性造訪館別</option>
+						<option value="type_3">排名前15女性造訪館別</option>
+					</select>
+					<button type="button"  onclick="reportQuery('1')">送出</button>
+					<div style="padding-top: 15px;">
+						<table id="myDataTalbe" width="95%" class="display" >
+							<thead style="text-align:right;">
+								<tr id="myDataTalbe_title">
+								</tr>
+							</thead>
+							<tbody id="report_tbody" style="text-align:right;">
+							</tbody>
+						</table>
+					</div>
+				</td>
+
+				<td>
+					<h1>第二層館別資料</h1>
+					<table id="myDataTalbe2" width="89%" class="display">
+						<thead>
+							<tr id="myDataTalbe_title2">
+							</tr>
+						</thead>
+						<tbody id="report_tbody2">
+						</tbody>
+					</table>
+				</td>
+				
+				<td>
+					<h1>第三層館別資料</h1>
+					<table id="myDataTalbe3" width="89%" class="display">
+						<thead>
+							<tr id="myDataTalbe_title3">
+							</tr>
+						</thead>
+						<tbody id="report_tbody3">
+						</tbody>
+					</table>
+				</td>
+				
+			</tr>
+		</table>
+		<div th:replace="tiles/footer"></div>
+</body>
+</html>
