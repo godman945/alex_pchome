@@ -31,24 +31,24 @@ public class DruidService implements IDruidService {
 		System.out.println(queryTyle);
 		
 		
-		Iterator<String> keysItr = json.keys();
-		while (keysItr.hasNext()) {
-			String key = keysItr.next();
-			org.json.JSONArray jsonArray = (org.json.JSONArray) json.get(key);
-			if(key.equals("query_type")) {
-				continue;
-			}
-
-			for (String string : jsonArray) {
-				
-			}
-			
-			
-			
-			System.out.println(key);
-			System.out.println(value);
-			
-		}
+//		Iterator<String> keysItr = json.keys();
+//		while (keysItr.hasNext()) {
+//			String key = keysItr.next();
+//			org.json.JSONArray jsonArray = (org.json.JSONArray) json.get(key);
+//			if(key.equals("query_type")) {
+//				continue;
+//			}
+//
+//			for (String string : jsonArray) {
+//				
+//			}
+//			
+//			
+//			
+//			System.out.println(key);
+//			System.out.println(value);
+//			
+//		}
 
 	}
 
