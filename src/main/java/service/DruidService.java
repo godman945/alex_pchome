@@ -29,8 +29,12 @@ public class DruidService implements IDruidService {
 		
 		
 		System.out.println(queryTyle);
-		//ALEX01
-	
+		//ALEX01_001
+		
+		
+		
+		
+		
 //		Iterator<String> keysItr = json.keys();
 //		while (keysItr.hasNext()) {
 //			String key = keysItr.next();
@@ -49,7 +53,7 @@ public class DruidService implements IDruidService {
 //			System.out.println(value);
 //			
 //		}
-
+//AAA
 	}
 
 }
