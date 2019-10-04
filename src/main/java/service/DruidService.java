@@ -30,7 +30,7 @@ public class DruidService implements IDruidService {
 		
 		System.out.println(queryTyle);
 		
-		
+		//ALEX
 //		Iterator<String> keysItr = json.keys();
 //		while (keysItr.hasNext()) {
 //			String key = keysItr.next();
