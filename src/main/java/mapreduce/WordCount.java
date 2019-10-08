@@ -19,6 +19,12 @@ import org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer;
 
 import com.hadoop.mapreduce.LzoTextInputFormat;
 
+
+45456456564
+5454565
+
+
+
 public class WordCount {
 	public static void main(String[] args) throws Exception {
 		
