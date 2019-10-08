@@ -20,11 +20,12 @@ import org.apache.hadoop.mapreduce.lib.reduce.IntSumReducer;
 import com.hadoop.mapreduce.LzoTextInputFormat;
 
 
-ystem.setProperty("hadoop.home.dir", "D:\\hadoop_2.8.5");
 System.getProperties().put("HADOOP_USER_NAME", "webuser");
 Configuration conf = new Configuration();
 conf.addResource("classpath:/hadoop/core-site.xml");
 conf.addResource("classpath:/had
+45456456564
+5454565
 
 
 public class WordCount {
