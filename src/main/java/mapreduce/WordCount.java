@@ -4,7 +4,9 @@
 //import java.io.InputStream;
 //import java.io.InputStreamReader;
 //import java.io.OutputStream;
-//
+// ALEX9999
+//4849849849+
+//464+
 //import org.apache.hadoop.conf.Configuration;
 //import org.apache.hadoop.filecache.DistributedCache;
 //import org.apache.hadoop.fs.FileSystem;
