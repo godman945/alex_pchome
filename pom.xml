@@ -144,6 +144,20 @@
 		    <version>1.15.0</version>
 		</dependency>
 		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-csv</artifactId>
+		    <version>1.5</version>
+		</dependency>
+
+
+
+<dependency>
+   <groupId>net.coobird</groupId>
+   <artifactId>thumbnailator</artifactId>
+   <version>0.4.8</version>
+</dependency>
+
 
 	</dependencies>
 
@@ -189,6 +203,21 @@
 					<outputDirectory>D:\pchome_work\tool\tomcat9\tomcat9_9.0.12\apache-tomcat-9.0.12\webapps\</outputDirectory>
 				</configuration>
 			</plugin>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		</plugins>
 	</build>
 	<repositories>
